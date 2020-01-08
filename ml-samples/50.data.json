@@ -1,0 +1,40 @@
+{
+    "components": [
+        {
+            "rect": {
+                "xMin": 121,
+                "xMax": 162,
+                "yMin": 33,
+                "yMax": 70
+            },
+            "kind": "dc.r"
+        },
+        {
+            "rect": {
+                "xMin": 188,
+                "xMax": 232,
+                "yMin": 86,
+                "yMax": 136
+            },
+            "kind": "dc.d"
+        },
+        {
+            "rect": {
+                "xMin": 39,
+                "xMax": 80,
+                "yMin": 94,
+                "yMax": 133
+            },
+            "kind": "dc.u"
+        },
+        {
+            "rect": {
+                "xMin": 109,
+                "xMax": 148,
+                "yMin": 145,
+                "yMax": 198
+            },
+            "kind": "dc.l"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "components": [
+        {
+            "rect": {
+                "xMin": 125,
+                "xMax": 175,
+                "yMin": 5,
+                "yMax": 51
+            },
+            "kind": "dc.r"
+        },
+        {
+            "rect": {
+                "xMin": 46,
+                "xMax": 87,
+                "yMin": 56,
+                "yMax": 99
+            },
+            "kind": "dc.u"
+        },
+        {
+            "rect": {
+                "xMin": 181,
+                "xMax": 227,
+                "yMin": 89,
+                "yMax": 133
+            },
+            "kind": "dc.d"
+        },
+        {
+            "rect": {
+                "xMin": 111,
+                "xMax": 147,
+                "yMin": 148,
+                "yMax": 184
+            },
+            "kind": "dc.r"
+        },
+        {
+            "rect": {
+                "xMin": 112,
+                "xMax": 147,
+                "yMin": 206,
+                "yMax": 248
+            },
+            "kind": "dc.l"
+        }
+    ]
+}

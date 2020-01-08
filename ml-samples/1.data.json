@@ -1,0 +1,13 @@
+{
+    "components": [
+        {
+            "rect": {
+                "xMin": 110,
+                "xMax": 185,
+                "yMin": 115,
+                "yMax": 146
+            },
+            "kind": "resistor.h"
+        }
+    ]
+}

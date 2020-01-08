@@ -1,0 +1,49 @@
+{
+    "components": [
+        {
+            "rect": {
+                "xMin": 112,
+                "xMax": 153,
+                "yMin": 27,
+                "yMax": 50
+            },
+            "kind": "resistor.h"
+        },
+        {
+            "rect": {
+                "xMin": 29,
+                "xMax": 76,
+                "yMin": 89,
+                "yMax": 137
+            },
+            "kind": "dc.u"
+        },
+        {
+            "rect": {
+                "xMin": 181,
+                "xMax": 226,
+                "yMin": 97,
+                "yMax": 117
+            },
+            "kind": "capacitor.v"
+        },
+        {
+            "rect": {
+                "xMin": 133,
+                "xMax": 174,
+                "yMin": 147,
+                "yMax": 195
+            },
+            "kind": "ac"
+        },
+        {
+            "rect": {
+                "xMin": 185,
+                "xMax": 223,
+                "yMin": 207,
+                "yMax": 234
+            },
+            "kind": "ground.u"
+        }
+    ]
+}

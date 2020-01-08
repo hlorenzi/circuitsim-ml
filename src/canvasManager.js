@@ -1,107 +1,4 @@
-let gTable = null
-let gIndex = 0
-
-const IMAGE_WIDTH = 256
-const IMAGE_HEIGHT = 256
-const IMAGE_SCALE = 3
-
-const canvasManagers = []
-
-
-document.body.onload = function()
-{
-	gTable = document.createElement("table")
-	document.body.appendChild(gTable)
-	gTable.style.margin = "auto"
-	
-	let buttonSave = document.createElement("button")
-	buttonSave.innerHTML = "Upload"
-	buttonSave.style.width = "150px"
-	buttonSave.style.height = "80px"
-	buttonSave.onclick = () => { upload() }
-	document.body.appendChild(buttonSave)
-	
-	createRowSection(10)
-}
-
-
-function upload()
-{
-	for (const canvas of canvasManagers)
-	{
-		if (canvas.cleared)
-			continue
-		
-		const data = 
-		{
-			input: canvas.getData(0),
-			output: canvas.getData(1),
-		}
-		
-		fetch("/upload",
-		{
-			method: "post",
-			headers: { "Content-Type": "application/json" },
-			body: JSON.stringify(data)			
-		})
-	}
-}
-
-
-function createRowSection(rowNum)
-{
-	for (let i = 0; i < rowNum; i++)
-		createRow()
-	
-	let tr = document.createElement("tr")
-	gTable.appendChild(tr)
-	
-	let td = document.createElement("td")
-	tr.appendChild(td)
-	
-	let buttonMore = document.createElement("button")
-	buttonMore.innerHTML = "Create More 10 Rows"
-	td.appendChild(buttonMore)
-	
-	buttonMore.onclick = () =>
-	{
-		gTable.removeChild(tr)
-		createRowSection(10)
-	}
-}
-
-
-function createRow()
-{
-	let tr = document.createElement("tr")
-	gTable.appendChild(tr)
-	
-	let td = []
-	for (let i = 0; i < 4; i++)
-	{
-		td[i] = document.createElement("td")
-		tr.appendChild(td[i])
-	}
-	
-	let spanInfo = document.createElement("span")
-	spanInfo.innerHTML = "Image #" + gIndex
-	td[0].appendChild(spanInfo)
-	
-	let canvas = new CanvasManager(3, IMAGE_WIDTH, IMAGE_HEIGHT, IMAGE_SCALE, ["0,0,0", "255,0,0", "0,255,0"], [1,5,5])
-	canvas.appendTo(td[1])
-	canvasManagers.push(canvas)
-	
-	let textareaLabels = document.createElement("textarea")
-	td[3].appendChild(textareaLabels)
-	textareaLabels.style.width = "250px"
-	textareaLabels.style.height = "120px"
-	textareaLabels.placeholder = "<same as above>"
-	
-	gIndex++
-}
-
-
-class CanvasManager
+export class CanvasManager
 {
 	constructor(layers, width, height, scale, colors, drawWidths)
 	{
@@ -184,7 +81,14 @@ class CanvasManager
 		this.topCanvas.addEventListener("touchcancel", (ev) => this.onTouchEnd  (ev))
 		
 		this.onDraw = () => { }
+		this.onDrawFrequent = () => { }
 		this.drawLayer = 0
+	}
+	
+	
+	setOpacity(opacity)
+	{
+		this.div.style.opacity = opacity
 	}
 	
 	
@@ -225,6 +129,22 @@ class CanvasManager
 		let data = { width: this.width, height: this.height, data: [] }
 		
 		return this.canvases[layer].toDataURL("image/png")//.getImageData(0, 0, this.width, this.height)
+	}
+	
+	
+	getImageData(layer)
+	{
+		return this.ctxs[layer].getImageData(0, 0, this.width, this.height)
+	}
+	
+	
+	putImageDataBuffer(layer, w, h, data)
+	{
+		let imageData = this.ctxs[layer].createImageData(w, h)
+		for (let i = 0; i < data.length; i++)
+			imageData.data[i] = data[i]
+		
+		this.ctxs[layer].putImageData(imageData, 0, 0)
 	}
 	
 	
@@ -335,6 +255,16 @@ class CanvasManager
 	}
 	
 	
+	useCtx(layer, fn)
+	{
+		const ctx = this.ctxs[layer]
+		ctx.save()
+		ctx.globalAlpha = 1
+		fn(ctx)
+		ctx.restore()
+	}
+	
+	
 	drawStroke(p1, p2)
 	{
 		this.cleared = false
@@ -347,5 +277,7 @@ class CanvasManager
 		ctx.moveTo(p1.x, p1.y)
 		ctx.lineTo(p2.x, p2.y)
 		ctx.stroke()
+		
+		this.onDrawFrequent()
 	}
 }

@@ -1,0 +1,40 @@
+{
+    "components": [
+        {
+            "rect": {
+                "xMin": 105,
+                "xMax": 152,
+                "yMin": 35,
+                "yMax": 79
+            },
+            "kind": "ac"
+        },
+        {
+            "rect": {
+                "xMin": 177,
+                "xMax": 221,
+                "yMin": 109,
+                "yMax": 155
+            },
+            "kind": "ac"
+        },
+        {
+            "rect": {
+                "xMin": 35,
+                "xMax": 84,
+                "yMin": 111,
+                "yMax": 157
+            },
+            "kind": "ac"
+        },
+        {
+            "rect": {
+                "xMin": 104,
+                "xMax": 156,
+                "yMin": 176,
+                "yMax": 224
+            },
+            "kind": "ac"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "components": [
+        {
+            "rect": {
+                "xMin": 185,
+                "xMax": 211,
+                "yMin": 20,
+                "yMax": 61
+            },
+            "kind": "ground.l"
+        },
+        {
+            "rect": {
+                "xMin": 73,
+                "xMax": 136,
+                "yMin": 23,
+                "yMax": 59
+            },
+            "kind": "resistor.h"
+        },
+        {
+            "rect": {
+                "xMin": 184,
+                "xMax": 211,
+                "yMin": 108,
+                "yMax": 137
+            },
+            "kind": "ground.l"
+        },
+        {
+            "rect": {
+                "xMin": 79,
+                "xMax": 135,
+                "yMin": 113,
+                "yMax": 136
+            },
+            "kind": "resistor.h"
+        },
+        {
+            "rect": {
+                "xMin": 197,
+                "xMax": 226,
+                "yMin": 191,
+                "yMax": 231
+            },
+            "kind": "ground.l"
+        },
+        {
+            "rect": {
+                "xMin": 85,
+                "xMax": 145,
+                "yMin": 193,
+                "yMax": 225
+            },
+            "kind": "resistor.h"
+        }
+    ]
+}

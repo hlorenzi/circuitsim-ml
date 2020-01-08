@@ -1,0 +1,31 @@
+{
+    "components": [
+        {
+            "rect": {
+                "xMin": 91,
+                "xMax": 152,
+                "yMin": 16,
+                "yMax": 67
+            },
+            "kind": "ac"
+        },
+        {
+            "rect": {
+                "xMin": 90,
+                "xMax": 144,
+                "yMin": 92,
+                "yMax": 148
+            },
+            "kind": "current.r"
+        },
+        {
+            "rect": {
+                "xMin": 92,
+                "xMax": 154,
+                "yMin": 170,
+                "yMax": 225
+            },
+            "kind": "dc.r"
+        }
+    ]
+}

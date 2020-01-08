@@ -1,0 +1,40 @@
+{
+    "components": [
+        {
+            "rect": {
+                "xMin": 134,
+                "xMax": 164,
+                "yMin": 47,
+                "yMax": 88
+            },
+            "kind": "battery.l"
+        },
+        {
+            "rect": {
+                "xMin": 184,
+                "xMax": 210,
+                "yMin": 97,
+                "yMax": 138
+            },
+            "kind": "resistor.v"
+        },
+        {
+            "rect": {
+                "xMin": 40,
+                "xMax": 62,
+                "yMin": 99,
+                "yMax": 142
+            },
+            "kind": "resistor.v"
+        },
+        {
+            "rect": {
+                "xMin": 103,
+                "xMax": 137,
+                "yMin": 167,
+                "yMax": 214
+            },
+            "kind": "battery.r"
+        }
+    ]
+}
