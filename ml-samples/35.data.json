@@ -1,0 +1,13 @@
+{
+    "components": [
+        {
+            "rect": {
+                "xMin": 93,
+                "xMax": 145,
+                "yMin": 109,
+                "yMax": 163
+            },
+            "kind": "current.r"
+        }
+    ]
+}

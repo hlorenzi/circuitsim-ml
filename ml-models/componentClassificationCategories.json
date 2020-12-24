@@ -1,0 +1,23 @@
+[
+  "resistor.h",
+  "resistor.v",
+  "ground.l",
+  "ground.r",
+  "ground.d",
+  "ground.u",
+  "capacitor.h",
+  "capacitor.v",
+  "battery.r",
+  "battery.l",
+  "battery.u",
+  "battery.d",
+  "current.r",
+  "current.l",
+  "current.u",
+  "current.d",
+  "ac",
+  "dc.r",
+  "dc.l",
+  "dc.u",
+  "dc.d"
+]

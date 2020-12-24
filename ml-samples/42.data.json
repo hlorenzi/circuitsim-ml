@@ -1,0 +1,94 @@
+{
+    "components": [
+        {
+            "rect": {
+                "xMin": 199,
+                "xMax": 224,
+                "yMin": 28,
+                "yMax": 58
+            },
+            "kind": "ground.l"
+        },
+        {
+            "rect": {
+                "xMin": 73,
+                "xMax": 114,
+                "yMin": 44,
+                "yMax": 62
+            },
+            "kind": "resistor.h"
+        },
+        {
+            "rect": {
+                "xMin": 163,
+                "xMax": 172,
+                "yMin": 83,
+                "yMax": 112
+            },
+            "kind": "resistor.v"
+        },
+        {
+            "rect": {
+                "xMin": 97,
+                "xMax": 121,
+                "yMin": 93,
+                "yMax": 111
+            },
+            "kind": "capacitor.v"
+        },
+        {
+            "rect": {
+                "xMin": 27,
+                "xMax": 73,
+                "yMin": 94,
+                "yMax": 140
+            },
+            "kind": "ac"
+        },
+        {
+            "rect": {
+                "xMin": 36,
+                "xMax": 59,
+                "yMin": 149,
+                "yMax": 184
+            },
+            "kind": "resistor.v"
+        },
+        {
+            "rect": {
+                "xMin": 122,
+                "xMax": 163,
+                "yMin": 153,
+                "yMax": 184
+            },
+            "kind": "battery.d"
+        },
+        {
+            "rect": {
+                "xMin": 67,
+                "xMax": 105,
+                "yMin": 181,
+                "yMax": 220
+            },
+            "kind": "dc.l"
+        },
+        {
+            "rect": {
+                "xMin": 219,
+                "xMax": 238,
+                "yMin": 181,
+                "yMax": 213
+            },
+            "kind": "ground.l"
+        },
+        {
+            "rect": {
+                "xMin": 167,
+                "xMax": 202,
+                "yMin": 182,
+                "yMax": 219
+            },
+            "kind": "current.r"
+        }
+    ]
+}

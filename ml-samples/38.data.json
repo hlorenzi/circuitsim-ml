@@ -1,0 +1,76 @@
+{
+    "components": [
+        {
+            "rect": {
+                "xMin": 91,
+                "xMax": 143,
+                "yMin": 17,
+                "yMax": 65
+            },
+            "kind": "dc.l"
+        },
+        {
+            "rect": {
+                "xMin": 154,
+                "xMax": 201,
+                "yMin": 79,
+                "yMax": 127
+            },
+            "kind": "ac"
+        },
+        {
+            "rect": {
+                "xMin": 25,
+                "xMax": 75,
+                "yMin": 89,
+                "yMax": 139
+            },
+            "kind": "current.u"
+        },
+        {
+            "rect": {
+                "xMin": 217,
+                "xMax": 237,
+                "yMin": 124,
+                "yMax": 149
+            },
+            "kind": "ground.l"
+        },
+        {
+            "rect": {
+                "xMin": 102,
+                "xMax": 119,
+                "yMin": 131,
+                "yMax": 169
+            },
+            "kind": "capacitor.h"
+        },
+        {
+            "rect": {
+                "xMin": 159,
+                "xMax": 205,
+                "yMin": 163,
+                "yMax": 206
+            },
+            "kind": "ac"
+        },
+        {
+            "rect": {
+                "xMin": 41,
+                "xMax": 65,
+                "yMin": 168,
+                "yMax": 207
+            },
+            "kind": "resistor.v"
+        },
+        {
+            "rect": {
+                "xMin": 98,
+                "xMax": 153,
+                "yMin": 198,
+                "yMax": 245
+            },
+            "kind": "current.l"
+        }
+    ]
+}

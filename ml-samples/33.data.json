@@ -1,0 +1,67 @@
+{
+    "components": [
+        {
+            "rect": {
+                "xMin": 180,
+                "xMax": 206,
+                "yMin": 9,
+                "yMax": 40
+            },
+            "kind": "ground.l"
+        },
+        {
+            "rect": {
+                "xMin": 83,
+                "xMax": 104,
+                "yMin": 42,
+                "yMax": 79
+            },
+            "kind": "capacitor.h"
+        },
+        {
+            "rect": {
+                "xMin": 169,
+                "xMax": 223,
+                "yMin": 87,
+                "yMax": 142
+            },
+            "kind": "battery.d"
+        },
+        {
+            "rect": {
+                "xMin": 12,
+                "xMax": 55,
+                "yMin": 117,
+                "yMax": 160
+            },
+            "kind": "battery.u"
+        },
+        {
+            "rect": {
+                "xMin": 107,
+                "xMax": 135,
+                "yMin": 132,
+                "yMax": 156
+            },
+            "kind": "ground.d"
+        },
+        {
+            "rect": {
+                "xMin": 61,
+                "xMax": 103,
+                "yMin": 182,
+                "yMax": 232
+            },
+            "kind": "battery.l"
+        },
+        {
+            "rect": {
+                "xMin": 134,
+                "xMax": 184,
+                "yMin": 199,
+                "yMax": 226
+            },
+            "kind": "resistor.h"
+        }
+    ]
+}

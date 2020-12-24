@@ -1,0 +1,76 @@
+{
+    "components": [
+        {
+            "rect": {
+                "xMin": 109,
+                "xMax": 137,
+                "yMin": 5,
+                "yMax": 34
+            },
+            "kind": "ground.d"
+        },
+        {
+            "rect": {
+                "xMin": 113,
+                "xMax": 136,
+                "yMin": 57,
+                "yMax": 79
+            },
+            "kind": "resistor.v"
+        },
+        {
+            "rect": {
+                "xMin": 216,
+                "xMax": 243,
+                "yMin": 107,
+                "yMax": 140
+            },
+            "kind": "ground.l"
+        },
+        {
+            "rect": {
+                "xMin": 17,
+                "xMax": 43,
+                "yMin": 113,
+                "yMax": 161
+            },
+            "kind": "ground.r"
+        },
+        {
+            "rect": {
+                "xMin": 65,
+                "xMax": 99,
+                "yMin": 116,
+                "yMax": 136
+            },
+            "kind": "resistor.h"
+        },
+        {
+            "rect": {
+                "xMin": 145,
+                "xMax": 184,
+                "yMin": 122,
+                "yMax": 136
+            },
+            "kind": "resistor.h"
+        },
+        {
+            "rect": {
+                "xMin": 118,
+                "xMax": 136,
+                "yMin": 161,
+                "yMax": 186
+            },
+            "kind": "resistor.v"
+        },
+        {
+            "rect": {
+                "xMin": 107,
+                "xMax": 144,
+                "yMin": 210,
+                "yMax": 239
+            },
+            "kind": "ground.u"
+        }
+    ]
+}

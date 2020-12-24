@@ -4,13 +4,19 @@
   "description": "",
   "private": true,
   "main": "main.js",
+  "type": "module",
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch --mode development",
     "start": "node index.js",
-    "train": "node train.js",
+    "train": "node --max-old-space-size=8192 train.js",
+    "train-placement": "node --experimental-modules --max-old-space-size=8192 src_train/trainComponentPlacement.js",
+    "train-classify": "node --experimental-modules --max-old-space-size=8192 src_train/trainComponentClassification.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
   "author": "",
   "dependencies": {
     "@babel/core": "^7.4.4",

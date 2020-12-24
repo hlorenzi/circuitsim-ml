@@ -1,0 +1,31 @@
+{
+    "components": [
+        {
+            "rect": {
+                "xMin": 102,
+                "xMax": 125,
+                "yMin": 31,
+                "yMax": 79
+            },
+            "kind": "capacitor.h"
+        },
+        {
+            "rect": {
+                "xMin": 85,
+                "xMax": 103,
+                "yMin": 118,
+                "yMax": 169
+            },
+            "kind": "capacitor.h"
+        },
+        {
+            "rect": {
+                "xMin": 103,
+                "xMax": 124,
+                "yMin": 181,
+                "yMax": 249
+            },
+            "kind": "capacitor.h"
+        }
+    ]
+}

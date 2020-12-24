@@ -5,13 +5,14 @@ module.exports =
 	mode: "production",
 	entry:
 	{
-		main: path.resolve(__dirname, "src/main.js"),
+		datasetSampleCreator: path.resolve(__dirname, "src/datasetSampleCreator.js"),
+		recognizeComponentTest: path.resolve(__dirname, "src/recognizeComponentTest.js"),
 	},
 	
 	output:
 	{
-		filename: "[name].js",
-		path: path.resolve(__dirname, ".webpack")
+		filename: "[name].bundle.js",
+		path: path.resolve(__dirname, "public/bundle")
 	},
 	
 	module:
@@ -23,7 +24,10 @@ module.exports =
 				exclude: /node_modules/,
 				use:
 				{
-					loader: "babel-loader"
+					loader: "babel-loader",
+					options: {
+						presets: ["@babel/preset-env"]
+					}
 				}
 			}
 		]
